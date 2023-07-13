@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -209,10 +209,10 @@ aside h1 {
   color: var(--body-font-color)
 }
 
-#food-img {
+/* #food-img {
   width: 100%;
   height: 100%;
-  background-image: url("../Assets/images/food.jpeg");
+  background-image: url("../Assets/images/Koding-Kitch.png");
   background-size: cover;
   background-position: bottom;
 }
@@ -225,8 +225,6 @@ aside h1 {
 }
 
 #trees-img {
-  /* width: 600px;
-    height: 400px; */
   width: 100%;
   height: 100%;
   background-image: url("../Assets/images/trees.avif");
@@ -258,8 +256,8 @@ aside h1 {
   height: 100%;
   background-image: url("../Assets/images/Crystals.avif");
   background-size: cover;
-  background-position: left;
-}
+  background-position: left; 
+}*/
 
 .flex-items {
   display: flex;

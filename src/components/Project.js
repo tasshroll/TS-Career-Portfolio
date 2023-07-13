@@ -1,6 +1,7 @@
 import { useState } from "react"
 
-export default function Project() {
+// name, gitHub, deployed, image are accessed in the work array
+export default function Project({ work }) {
 
     const styles = {
         header: {
@@ -26,7 +27,7 @@ export default function Project() {
 
                     <h1>About<br />Me</h1>
                     <p style={styles.subtopics}>
-                        With a background in software engineering and teaching, I am passionate about creating innovative technology solutions
+                        With a background in teaching, I am passionate about creating innovative technology solutions
                         for improved user experiences.  I am persuing a certificate in Full Stack Web Development from Arizona State University Coding
                         Boot Camp. With a growth mindset, I focus on continuous
                         learning and self-improvement. I am highly motivated to tackle new challenges and collaborate effectively as a
@@ -42,56 +43,23 @@ export default function Project() {
 
                 <section className="work-container" id="work">
 
-                    {/*</section><!-- Work Cards go in this Section -->*/}
-                    <section className="flex-items" id="food-img">
+                    <section className="flex-items" >
                         <div>
-                            <header>Project</header>
-                            <a href="https://ggdave.github.io/Koding-Kitchen">
-                                <p>Recipe Finder</p>
-                            </a>
-                        </div>
-                    </section>
+                            <ul>
+                                {work.map((project) => (
+                                    <li key={project.name}>
 
-                    {/*<!-- Weather App -->*/}
-                    <section className="flex-items" id="trees-img">
-                        <div>
-                            <header>Weather Pulse </header>
-                            <a href="https://tasshroll.github.io/weather-dashboard/">
-                                <p>Node/loT</p>
-                            </a>
+                                        <a href={project.gitHub}>
+                                        <img src="../../public/github-logo.png" alt="GitHub Logo" />
+                                            {project.name}
+                                            
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
-                    </section>
 
-                    {/*<!-- Tech Blog -->*/}
-                    <section className=" flex-items" id="kitchen-img">
-                        <div>
-                            <header>Tech Blog </header>
-                            <a href="https://best-tech-blog-app.herokuapp.com/">
-                                <p>mySQL2/Sequelize/bcrypt/Express </p>
-                            </a>
-                        </div>
                     </section>
-
-                    {/*<!-- Book Worm -->*/}
-                    <section className="flex-items" id="books-img">
-                        <div>
-                            <header>Book Worm </header>
-                            <a href="http://bookwormy.herokuapp.com/">
-                                <p>MERN Stack</p>
-                            </a>
-                        </div>
-                    </section>
-
-                    {/*<!-- Note Taker -->*/}
-                    <section className="flex-items" id="crystals-img">
-                        <div>
-                            <header>Note Taker </header>
-                            <a href="https://tifs-best-note-taker.herokuapp.com/">
-                                <p>Express</p>
-                            </a>
-                        </div>
-                    </section>
-
                 </section>
 
             </main>
