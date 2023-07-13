@@ -16,8 +16,25 @@ export default function Project({ work }) {
             /* text-align:center; */
             fontSize: 15,
             color: "black"
+        },
+        githubIcon: {
+            marginRight: 10,
+            width: 30,
+            height: 30
+        },
+        projectImage: {
+            marginRight: 10,
+            width: 140,
+            height: 100
+        },
+        photoImage: {
+            marginRight: 10,
+            width: 120,
+            height: 120
         }
     };
+
+
 
     return (
         <div>
@@ -26,6 +43,8 @@ export default function Project({ work }) {
                 <section className="subtopics" id="about-me">
 
                     <h1>About<br />Me</h1>
+                    <img src="../../Tif-headshot.jpeg" alt="headshot" style={styles.photoImage} />
+
                     <p style={styles.subtopics}>
                         With a background in teaching, I am passionate about creating innovative technology solutions
                         for improved user experiences.  I am persuing a certificate in Full Stack Web Development from Arizona State University Coding
@@ -50,9 +69,20 @@ export default function Project({ work }) {
                                     <li key={project.name}>
 
                                         <a href={project.gitHub}>
-                                        <img src="../../public/github-logo.png" alt="GitHub Logo" />
+
+                                            <img
+                                                src="../../github-logo.png"
+                                                alt="GitHub Logo style="
+                                                style={styles.githubIcon} />
                                             {project.name}
-                                            
+                                        </a>
+                                        <a href={project.deployed}>
+
+                                            <img
+                                                src={project.image}
+                                                alt="Project Image"
+                                                style={styles.projectImage}
+                                            />
                                         </a>
                                     </li>
                                 ))}
