@@ -2,6 +2,7 @@ import { useState } from "react"
 
 // name, gitHub, deployed, image are accessed in the work array
 export default function Project({ work }) {
+    
 
     const styles = {
         header: {
@@ -10,13 +11,23 @@ export default function Project({ work }) {
             background: "#e4ebe5"
         },
 
-        subtopics: {
-            padding: "0 20 20 20",
-            backgroundColor: "#e4ebe5",
-            /* text-align:center; */
-            fontSize: 15,
-            color: "black"
-        },
+        // subtopics: {
+        //     padding: "0 20 20 20",
+        //     backgroundColor: "#e4ebe5",
+        //     /* text-align:center; */
+        //     fontSize: 15,
+        //     color: "black"
+        // },
+        subtopics : {
+            display: "flex",
+            flexFlow: "row wrap",
+            justifyContent: "flexStart",
+            width: 100,
+            padding: 10,
+            margin: 20,
+            fontSize: 15
+          },
+    
         githubIcon: {
             marginRight: 10,
             width: 30,
@@ -40,7 +51,7 @@ export default function Project({ work }) {
         <div>
             <main>
                 {/*<!-- About Me-->*/}
-                <section className="subtopics" id="about-me">
+                <section className="subtopics">
 
                     <h1>About<br />Me</h1>
                     <img src="../../Tif-headshot.jpeg" alt="headshot" style={styles.photoImage} />

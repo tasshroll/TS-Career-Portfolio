@@ -239,10 +239,7 @@ aside h1 {
   background-position: bottom;
 }
 
-#waves-img {
-  background-image: url("../Assets/images/waves.avif");
-  background-size: cover;
-}
+
 
 #books-img {
   width: 100%;
@@ -258,6 +255,11 @@ aside h1 {
   background-size: cover;
   background-position: left; 
 }*/
+
+#waves-img {
+  background-image: url("../public/waves.avif");
+  background-size: cover;
+}
 
 .flex-items {
   display: flex;
