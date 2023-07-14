@@ -6,9 +6,10 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 // Import the work array listing all work info
-import work from './work'
+import  work  from './work';
 
-export default function PortfolioContainer( {work}) {
+
+export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('About');
 
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.

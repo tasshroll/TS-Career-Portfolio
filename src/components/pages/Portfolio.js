@@ -1,7 +1,8 @@
 
 // name, gitHub, deployed, image are accessed in the work array
 export default function Portfolio({ work }) {
-    
+
+    console.log("inside of portfolio");
 
     const styles = {
         header: {
@@ -10,7 +11,7 @@ export default function Portfolio({ work }) {
             background: "#e4ebe5"
         },
 
-        subtopics : {
+        subtopics: {
             display: "flex",
             flexFlow: "row wrap",
             justifyContent: "flexStart",
@@ -18,8 +19,8 @@ export default function Portfolio({ work }) {
             padding: 10,
             margin: 20,
             fontSize: 15
-          },
-    
+        },
+
         githubIcon: {
             marginRight: 10,
             width: 30,
@@ -29,48 +30,23 @@ export default function Portfolio({ work }) {
             marginRight: 10,
             width: 140,
             height: 100
-        },
-        photoImage: {
-            marginRight: 10,
-            width: 120,
-            height: 120
         }
     };
 
     return (
         <div>
             <main>
-                {/*<!-- About Me-->*/}
-                <section className="subtopics">
-
-                    <h1>About<br />Me</h1>
-                    <img src="../../Tif-headshot.jpeg" alt="headshot" style={styles.photoImage} />
-
-                    <p style={styles.subtopics}>
-                        With a background in teaching, I am passionate about creating innovative technology solutions
-                        for improved user experiences.  I am persuing a certificate in Full Stack Web Development from Arizona State University Coding
-                        Boot Camp. With a growth mindset, I focus on continuous
-                        learning and self-improvement. I am highly motivated to tackle new challenges and collaborate effectively as a
-                        team member. With exceptional communication and writing abilities, I can efficiently convey complex ideas and
-                        information.
-                    </p>
-                </section>
-
                 {/*<!-- Work Sidebar -->*/}
-                <aside>
-                    <h1>Work</h1>
-                </aside>
-
-                <section className="work-container" id="work">
-
-                    <section className="flex-items" >
+                <h1>Work</h1>
+                <section>
+                    {/* <section className="work-container" > */}
+                    <section>
+                        {/* <section className="flex-items" > */}
                         <div>
                             <ul>
                                 {work.map((project) => (
                                     <li key={project.name}>
-
                                         <a href={project.gitHub}>
-
                                             <img
                                                 src="../../github-logo.png"
                                                 alt="GitHub Logo style="
@@ -81,7 +57,7 @@ export default function Portfolio({ work }) {
 
                                             <img
                                                 src={project.image}
-                                                alt="Project Image"
+                                                alt="Project"
                                                 style={styles.projectImage}
                                             />
                                         </a>
@@ -93,8 +69,8 @@ export default function Portfolio({ work }) {
                     </section>
                 </section>
 
-            </main>
-        </div>
+            </main >
+        </div >
 
     );
 }

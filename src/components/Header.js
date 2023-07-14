@@ -26,7 +26,6 @@ export default function Header() {
                         <bold>Creative/Professional</bold>
                     </p>
                 </section>
-                <Navbar />
             </div>
         </div>
     );
