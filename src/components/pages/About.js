@@ -1,0 +1,51 @@
+// name, gitHub, deployed, image are accessed in the work array
+export default function About() {
+
+
+    const styles = {
+        header: {
+            margin: 20,
+            padding: 6,
+            background: "#e4ebe5"
+        },
+
+        subtopics: {
+            display: "flex",
+            flexFlow: "row wrap",
+            justifyContent: "flexStart",
+            width: 100,
+            padding: 10,
+            margin: 20,
+            fontSize: 15
+        },
+
+        photoImage: {
+            marginRight: 10,
+            width: 120,
+            height: 120
+        }
+    };
+
+    return (
+        <div>
+            <main>
+                <section className="subtopics">
+
+                    <h1>About<br />Me</h1>
+                    <img src="../../Tif-headshot.jpeg" alt="headshot" style={styles.photoImage} />
+
+                    <p style={styles.subtopics}>
+                        With a background in teaching, I am passionate about creating innovative technology solutions
+                        for improved user experiences.  I am persuing a certificate in Full Stack Web Development from Arizona State University Coding
+                        Boot Camp. With a growth mindset, I focus on continuous
+                        learning and self-improvement. I am highly motivated to tackle new challenges and collaborate effectively as a
+                        team member. With exceptional communication and writing abilities, I can efficiently convey complex ideas and
+                        information.
+                    </p>
+                </section>
+
+            </main>
+        </div>
+
+    );
+}

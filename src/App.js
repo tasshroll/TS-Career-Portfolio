@@ -1,8 +1,7 @@
 import Header from './components/Header';
-import Project from './components/Project';
+import PortfolioContainer from './components/PortfolioContainer';
 
-// Import the work array listing all work info
-import work from './work'
+
 
 // Import CSS to style the pages
 import './App.css';
@@ -12,7 +11,7 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <Project work ={work}/>
+      <PortfolioContainer />
     </div>
   );
 }

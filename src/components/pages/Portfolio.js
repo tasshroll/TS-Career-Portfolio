@@ -1,7 +1,6 @@
-import { useState } from "react"
 
 // name, gitHub, deployed, image are accessed in the work array
-export default function Project({ work }) {
+export default function Portfolio({ work }) {
     
 
     const styles = {
@@ -11,13 +10,6 @@ export default function Project({ work }) {
             background: "#e4ebe5"
         },
 
-        // subtopics: {
-        //     padding: "0 20 20 20",
-        //     backgroundColor: "#e4ebe5",
-        //     /* text-align:center; */
-        //     fontSize: 15,
-        //     color: "black"
-        // },
         subtopics : {
             display: "flex",
             flexFlow: "row wrap",
