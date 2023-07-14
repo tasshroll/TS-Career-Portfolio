@@ -45,8 +45,6 @@ export default function Project({ work }) {
         }
     };
 
-
-
     return (
         <div>
             <main>
