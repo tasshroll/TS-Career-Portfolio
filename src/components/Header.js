@@ -1,32 +1,35 @@
-import { useState } from "react"
-import Navbar from './Navbar';
 
-export default function Header() {
+import AppBar from './Navbar';
+import Navigation from './Navbar'
+
+export default function Header({currentPage, handlePageChange}) {
     const styles = {
-        header: {
-          margin:20,
-          padding: 6,
-          background: "#e4ebe5"},
-        
+        header_style: {
+            // display: 'flex',
+            // justifyContent: 'space-between',
+            // alignItems: 'center',
+            // padding: 6,
+            background: "#c0b1c7"
+        },
+
         subHeader: {
-            display: "flex",
-            flexDDirection: "row",
-            alignItems: "flex-end",
-            height: 100,
-            justifyContent: "flex-end"}
-          };
+            // display: "flex",
+            // flexDDirection: "row",
+            // alignItems: "flex-end",
+            // height: 100,
+            // justifyContent: "flex-end"
+        }
+    };
     return (
-        <div>
-            <div className="header-style" id = "waves-img">
-                <div>
-                <h1 style={styles.header} >Tifni Shroll</h1>
-                </div>
-                <section className="subHeader">
-                    <p className="subheading" style={styles.header}>
-                        <bold>Creative/Professional</bold>
-                    </p>
-                </section>
-            </div>
+
+        <div 
+        style={styles.header_style}
+        >
+            <AppBar currentPage={currentPage} handlePageChange={handlePageChange} />
+
+
+
         </div>
+
     );
 }

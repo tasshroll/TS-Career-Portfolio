@@ -1,8 +1,13 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
+
+import gLogo from '../../Assets/images/github-logo.png'
 // name, gitHub, deployed, image are accessed in the work array
-export default function Portfolio({ work }) {
 
-    console.log("inside of portfolio");
+export default function Portfolio({ work1, work2 }) {
 
     const styles = {
         header: {
@@ -10,67 +15,60 @@ export default function Portfolio({ work }) {
             padding: 6,
             background: "#e4ebe5"
         },
-
-        subtopics: {
-            display: "flex",
-            flexFlow: "row wrap",
-            justifyContent: "flexStart",
-            width: 100,
-            padding: 10,
-            margin: 20,
-            fontSize: 15
+        title: {
+            textAlign: "center",
+            marginBottom: 30
         },
 
         githubIcon: {
             marginRight: 10,
             width: 30,
-            height: 30
+            height: 30,
+            textAlign: 'center'
         },
         projectImage: {
             marginRight: 10,
             width: 140,
             height: 100
         }
+
     };
 
     return (
-        <div>
-            <main>
-                {/*<!-- Work Sidebar -->*/}
-                <h1>Work</h1>
-                <section>
-                    {/* <section className="work-container" > */}
-                    <section>
-                        {/* <section className="flex-items" > */}
-                        <div>
-                            <ul>
-                                {work.map((project) => (
-                                    <li key={project.name}>
-                                        <a href={project.gitHub}>
-                                            <img
-                                                src="../../github-logo.png"
-                                                alt="GitHub Logo style="
-                                                style={styles.githubIcon} />
-                                            {project.name}
-                                        </a>
-                                        <a href={project.deployed}>
+        <section>
+        <div style={styles.title}>
+            <h1 >Coding Projects</h1>
+            <h4>Click an image below to explore my projects:</h4>
+            </div>
 
-                                            <img
-                                                src={project.image}
-                                                alt="Project"
-                                                style={styles.projectImage}
-                                            />
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+            <Container>
+                <Row xs={1} md={2} lg={3} className="g-4">
+                    {work1.map((project, idx) => (
+                        <Col key={idx}>
+                            <Card border="secondary" style={{ width: '20rem' }}>
 
-                    </section>
-                </section>
+                                <Card.Link href={project.deployed}>
+                                    <Card.Img variant="top" src={project.image} />
+                                </Card.Link>
 
-            </main >
-        </div >
-
+                                <Card.Body>
+                                    <Card.Title >{project.name}</Card.Title>
+                                    <Card.Text>
+                                        {project.description}
+                                    </Card.Text>
+                                    <Card.Link href={project.gitHub}>
+                                        <div style={styles.title}>
+                                        <Card.Img variant="top" src={gLogo} style={styles.githubIcon} />
+                                        </div>
+                                    </Card.Link>
+                                    <Card.Text >{project.technologies}</Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
+        </section>
     );
+
 }
