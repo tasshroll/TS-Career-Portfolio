@@ -5,9 +5,9 @@ import Card from 'react-bootstrap/Card';
 
 
 import gLogo from '../../Assets/images/github-logo.png'
-// name, gitHub, deployed, image are accessed in the work array
 
-export default function Portfolio({ work1, work2 }) {
+// work array contains porject details
+export default function Portfolio({ work1 }) {
 
     const styles = {
         header: {
@@ -34,6 +34,9 @@ export default function Portfolio({ work1, work2 }) {
 
     };
 
+    // map method displays html containing project details for each element in work array
+    // Will display 6 cards with project image, title, description, list of skills, 
+    // link to deployed project - through the image and link to gitHub - through the icon
     return (
         <section>
         <div style={styles.title}>

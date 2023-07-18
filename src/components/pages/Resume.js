@@ -9,8 +9,7 @@ export default function Resume() {
 
     const styles = 
     { downloadBtn : {
-        margin : 30
-    }
+        margin : 30}
     }; 
 
     // technical skills to display

@@ -1,38 +1,33 @@
 import { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 import Form from 'react-bootstrap/Form';
-
+import Container from 'react-bootstrap/Container';
 
 // Form for person to email me
 export default function Contact() {
-    
 
     const styles = {
         header: {
-            marginBottom: 25,
+            marginBottom: 30,
         },
-
         text : {
-            // display: "flex",
             width: 600,
             padding: 10,
             margin: 40,
-            fontSize: "1.5rem"
+            fontSize: "1.5rem",
+            textAlign: "center"
           },
-    
-        githubIcon: {
-            marginRight: 10,
-            width: 30,
-            height: 30
+        shape: {
+          display: "flex", 
+          justifyContent: "center", 
+          minHeight: "100vh" 
         }
     };
-    //TODO ADD IN authentication - finish work.js descriptions and skills
 
     // state variables displayed on input form
     const [email, setEmail] = useState('');
     const [userName, setUserName] = useState('');
     const [message, setMessage] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
 
     // When user enters data on form, change the state depending on the target
     const handleInputChange = (e) => {
@@ -59,19 +54,16 @@ export default function Contact() {
 
         // Validate Email and Username
         if (!validateEmail(email)) {
-            setErrorMessage("Email is invalid")
-            alert (errorMessage)
+            alert("Email is invalid")
             return;
         }
         if (!userName) {
-          setErrorMessage("Please enter User Name")
-          alert (errorMessage)
+          alert("Please enter User Name")
           return;
       }
         // Message must be entered
         if (!message) {
-            setErrorMessage(`Please enter a message, ${userName}`);
-            alert (errorMessage)
+            alert(`Please enter a message, ${userName}`);
             return;
         }
 
@@ -81,11 +73,12 @@ export default function Contact() {
         setUserName('');
         setMessage('');
         setEmail('');
-        setErrorMessage('')
     };
 
    return (
-      <Form style={styles.text}>
+    <Container style={styles.shape }>
+      <Form >
+        <div style={styles.text}>
         <h1 style={styles.header}>Contact Me</h1>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label >User Name</Form.Label>
@@ -100,41 +93,8 @@ export default function Contact() {
           <Form.Control onChange={handleInputChange} value={message} name="message" as="textarea" rows={3} />
         </Form.Group>
         <button type="button" onClick={handleFormSubmit}>Submit</button>
+        </div>
       </Form>
+      </Container>
       );
     }
-
-
-        // <div style={styles.subtopics}>
-        //   <p>Hello {userName}</p>
-        //   <form className="form">
-            
-        //     <input
-        //       value={userName}
-        //       name="userName"
-        //       onChange={handleInputChange}
-        //       type="text"
-        //       placeholder="username"
-        //     />
-        //     <input
-        //       value={email}
-        //       name="email"
-        //       onChange={handleInputChange}
-        //       type="email"
-        //       placeholder="email"
-        //     />
-        //     <input
-        //       value={message}
-        //       name="message"
-        //       onChange={handleInputChange}
-        //       type="text"
-        //       placeholder="message"
-        //     />
-        //     <button type="button" onClick={handleFormSubmit}>Submit</button>
-        //   </form>
-        //   {errorMessage && (
-        //     <div>
-        //       <p className="error-text">{errorMessage}</p>
-        //     </div>
-        //   )}
-        // </div>

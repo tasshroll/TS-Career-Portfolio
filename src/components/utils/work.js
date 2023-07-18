@@ -1,3 +1,4 @@
+// import images of each project
 import kodingKitchen from '../../Assets/images/Koding-Kitch.png'
 import weather from '../../Assets/images/weather-dashboard.png'
 import book from '../../Assets/images/bookworm.png'
@@ -5,8 +6,7 @@ import blog from '../../Assets/images/blog_profile_page.png'
 import note from '../../Assets/images/Save-a-note.png'
 import password from '../../Assets/images/Password-screenshot.png'
 
-
-
+// Array holding objects wot project details
 export const work1 = [
     {
         name: "Koding Kitchen",
@@ -21,7 +21,7 @@ export const work1 = [
         gitHub: "https://github.com/tasshroll/weather-dashboard",
         deployed: "https://tasshroll.github.io/weather-dashboard/",
         image: weather,
-        description: "Retreive real-time weather updates for multiple cities and view the five forecast.",
+        description: "Retrieve real-time weather updates for multiple cities and view the five day forecast. The app uses OpenWeather API and runs in the browser and features dynamically updated HTML and CSS, powered by JavaScript.",
         technologies: "JavaScript, HTML, CSS, API, Front End, local-storage"
     },
     {
@@ -29,8 +29,8 @@ export const work1 = [
         gitHub: "https://github.com/tasshroll/BookWorm",
         deployed: "https://bookwormy.herokuapp.com/",
         image: book,
-        description: "Find a goodd book to read! This application allows users to find books, save thier favorite books, and comment on books. Must sign in to use site.",
-        technologies: "Node, Express.js, API, bcrypt, JavaScript, HTML, CSS, Sequelize, mySQL"
+        description: "Find a good book to read! This application allows users to find books, save their favorite books, and comment on books. Must sign in to use site.",
+        technologies: "Node, Express.js, REST API, bcrypt, JavaScript, HTML, CSS, Sequelize, mySQL"
     },   
     {
         name: "Tech Blog",
