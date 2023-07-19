@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ecaf5ea2.css",
-    "main.js": "/static/js/main.a8605682.js",
-    "static/js/787.56b9ac4d.chunk.js": "/static/js/787.56b9ac4d.chunk.js",
-    "static/media/Koding-Kitch.png": "/static/media/Koding-Kitch.ba59636c954fa2214ca4.png",
-    "static/media/bookworm.png": "/static/media/bookworm.c366a1d09b97d086dfae.png",
-    "static/media/weather-dashboard.png": "/static/media/weather-dashboard.0665613f7753f6509f9b.png",
-    "static/media/Password-screenshot.png": "/static/media/Password-screenshot.ff6b71b166e652219bda.png",
-    "static/media/blog_profile_page.png": "/static/media/blog_profile_page.fab3b9c4044ec09f61cd.png",
-    "static/media/Tif-headshot.jpeg": "/static/media/Tif-headshot.188e72ac0f173ebdb0c4.jpeg",
-    "static/media/Save-a-note.png": "/static/media/Save-a-note.b5e4c3a1c1dc5f4efb2a.png",
-    "index.html": "/index.html",
-    "main.ecaf5ea2.css.map": "/static/css/main.ecaf5ea2.css.map",
-    "main.a8605682.js.map": "/static/js/main.a8605682.js.map",
-    "787.56b9ac4d.chunk.js.map": "/static/js/787.56b9ac4d.chunk.js.map"
+    "main.css": "/TS-Career_Portfolio/static/css/main.ecaf5ea2.css",
+    "main.js": "/TS-Career_Portfolio/static/js/main.3c5b77e9.js",
+    "static/js/787.56b9ac4d.chunk.js": "/TS-Career_Portfolio/static/js/787.56b9ac4d.chunk.js",
+    "static/media/Koding-Kitch.png": "/TS-Career_Portfolio/static/media/Koding-Kitch.ba59636c954fa2214ca4.png",
+    "static/media/bookworm.png": "/TS-Career_Portfolio/static/media/bookworm.c366a1d09b97d086dfae.png",
+    "static/media/weather-dashboard.png": "/TS-Career_Portfolio/static/media/weather-dashboard.0665613f7753f6509f9b.png",
+    "static/media/Password-screenshot.png": "/TS-Career_Portfolio/static/media/Password-screenshot.ff6b71b166e652219bda.png",
+    "static/media/blog_profile_page.png": "/TS-Career_Portfolio/static/media/blog_profile_page.fab3b9c4044ec09f61cd.png",
+    "static/media/Tif-headshot.jpeg": "/TS-Career_Portfolio/static/media/Tif-headshot.188e72ac0f173ebdb0c4.jpeg",
+    "static/media/Save-a-note.png": "/TS-Career_Portfolio/static/media/Save-a-note.b5e4c3a1c1dc5f4efb2a.png",
+    "index.html": "/TS-Career_Portfolio/index.html",
+    "main.ecaf5ea2.css.map": "/TS-Career_Portfolio/static/css/main.ecaf5ea2.css.map",
+    "main.3c5b77e9.js.map": "/TS-Career_Portfolio/static/js/main.3c5b77e9.js.map",
+    "787.56b9ac4d.chunk.js.map": "/TS-Career_Portfolio/static/js/787.56b9ac4d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecaf5ea2.css",
-    "static/js/main.a8605682.js"
+    "static/js/main.3c5b77e9.js"
   ]
 }
