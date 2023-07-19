@@ -1,5 +1,5 @@
 
-import AppBar from './Navbar';
+import NavAnchors from './NavAnchors';
 
 export default function Header({currentPage, handlePageChange}) {
     const styles = {
@@ -12,7 +12,7 @@ export default function Header({currentPage, handlePageChange}) {
         <div 
         style={styles.header_style}
         >
-            <AppBar currentPage={currentPage} handlePageChange={handlePageChange} />
+            <NavAnchors currentPage={currentPage} handlePageChange={handlePageChange} />
         </div>
 
     );

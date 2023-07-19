@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
-export default function AppBar({ currentPage, handlePageChange }) {
+export default function NavAnchors({ currentPage, handlePageChange }) {
   const styles = {
 
     navLink: {
@@ -27,7 +27,6 @@ export default function AppBar({ currentPage, handlePageChange }) {
       fontWeight: "500",
     },
   };
-
 
   return (
   
