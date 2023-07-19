@@ -27,7 +27,8 @@ export default function Portfolio({ work1 }) {
             textAlign: 'center'
         },
         projectImage: {
-            marginRight: 10,
+            // marginRight: 10,
+            margin: 10,
             width: 140,
             height: 100
         }
@@ -45,7 +46,7 @@ export default function Portfolio({ work1 }) {
             </div>
 
             <Container>
-                <Row xs={1} md={2} lg={3} className="g-4">
+                <Row xs={1} md={2} lg={3} className="g-5">
                     {work1.map((project, idx) => (
                         <Col key={idx}>
                             <Card border="secondary" style={{ width: '20rem' }}>

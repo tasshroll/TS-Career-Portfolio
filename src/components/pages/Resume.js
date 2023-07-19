@@ -4,6 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+// Work.js contains all project details and url links
+import {urls} from '../utils/work';
+import {skills} from '../utils/work';
 
 export default function Resume() {
 
@@ -12,17 +15,11 @@ export default function Resume() {
         margin : 30}
     }; 
 
-    // technical skills to display
-    const skills = ["React", "JavaScript", "HTML", "CSS", "SQL", "NoSQL", "MongoDB",
-        "MERN", "React", "Node", "jQuery", "Bootstrap", "API", "Insomnia", "Heroku",
-        "Ada", "JSON"];
-
-    // Function to download resume
     function downloadResume() {
-        const resumeURL = "https://docs.google.com/document/d/1PQyY64zJtuLAxFP9K0l_yvupJwXLNUz9x3R-v2NWoxI/export?format=pdf"
-        window.location.href = resumeURL;
+        window.location.href = urls.resume;
     };
 
+    // create button to access resume and a list of skills
     return (
         <Container align="center" fluid>
             <Row>
@@ -32,10 +29,6 @@ export default function Resume() {
                     Download My Resume                     
                 </Button>{' '}
                  </div>
-                {/* <div style={styles.downloadBtn}>
-                    
-                    <button  onClick={downloadResume}>Download My Resume</button>
-                </div> */}
                     <h1>Technical Skills</h1>
 
                     <Card border="secondary" style={{ width: '20rem' }}>

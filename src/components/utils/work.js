@@ -31,7 +31,7 @@ export const work1 = [
         image: book,
         description: "Find a good book to read! This application allows users to find books, save their favorite books, and comment on books. Must sign in to use site.",
         technologies: "Node, Express.js, REST API, bcrypt, JavaScript, HTML, CSS, Sequelize, mySQL"
-    },   
+    },
     {
         name: "Tech Blog",
         gitHub: "https://github.com/tasshroll/best-blog-site",
@@ -57,4 +57,17 @@ export const work1 = [
         technologies: "React, JavaScript, HTML, CSS"
     },
 ]
+
+export const urls = 
+    {
+        stack_overflow: "https://stackoverflow.com/users/22244564/tasshroll",
+        resume: "https://docs.google.com/document/d/1PQyY64zJtuLAxFP9K0l_yvupJwXLNUz9x3R-v2NWoxI/export?format=pdf",
+        linkedIn: "https://bit.ly/3rrudhR",
+        gitHub: "https://github.com/tasshroll",
+        portfolio: "https://bit.ly/3O99Qil "
+    }
+
+export const skills = ["React", "JavaScript", "HTML", "CSS", "SQL", "NoSQL", "MongoDB",
+        "MERN", "React", "Node", "jQuery", "Bootstrap", "API", "Insomnia", "Heroku",
+        "Ada", "JSON"];
 
