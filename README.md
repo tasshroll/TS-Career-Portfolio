@@ -3,10 +3,12 @@ My portfolio showcases my talents and skills to potential employers.  It contain
 
 ## Deployed Webpage
 
-https://tasshroll.github.io/Career-Portfolio/
+https://tasshroll.github.io/TS-Career-Portfolio/
 
 ## Git Hub Repository
-https://github.com/tasshroll/
+
+https://github.com/tasshroll/TS-Career-Portfolio
+
 
 
 ## Description
@@ -22,7 +24,7 @@ Work includes:
 
 Portfolio Screenshot
 
-![Portfolio Screenshot](Assets/images/career-portfolio.png)
+<img src="src/Assets/images/Portfolio_Project.png" alt="Portfolio Projects" width ="500">
 
 ## Usage
 Click, scroll, and re-size window to interact with the elements. Links within the page showcase my current work as well as contact info.

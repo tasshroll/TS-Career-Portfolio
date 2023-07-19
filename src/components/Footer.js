@@ -5,9 +5,9 @@ import li_icon from '../Assets/images/linkedIn.png';
 import gh_icon from '../Assets/images/github-logo.png'
 
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+// Create Footer with links to GitHub, LinkedIn, and Stack Overflow
 export default function Footer({ currentPage, handlePageChange }) {
 
     const styles = {

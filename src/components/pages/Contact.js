@@ -3,7 +3,7 @@ import { validateEmail } from '../utils/helpers';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 
-// Form for person to email me
+// Form for user to contact me through email
 export default function Contact() {
 
     const styles = {
