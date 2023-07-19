@@ -1,5 +1,6 @@
 {
   "name": "shroll-portfolio",
+  "homepage": "https://github.com/tasshroll/TS-Career-Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
