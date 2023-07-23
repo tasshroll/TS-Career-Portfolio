@@ -6,7 +6,6 @@ import Card from 'react-bootstrap/Card';
 
 export default function About() {
 
-
     const styles = {
         text: {
             display: "flex",

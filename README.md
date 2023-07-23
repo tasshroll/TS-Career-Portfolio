@@ -11,13 +11,13 @@ https://github.com/tasshroll/TS-Career-Portfolio
 
 
 ## Description
-This porfolio was built with React. It contains links to current completed projects, both individual and group, as well as my contact information. 
+My portolio contains links to current completed projects, as well as contact information and resume. This porfolio was built with [React](https://react.dev/) and [React Router](https://reactrouter.com/en/main) . 
 
 Coding projects include:
 
 * Recipe Finder 
-* Weather App
 * Book Worm
+* Weather App
 * Tech Blog
 * Note Taker
 * Password Generator React

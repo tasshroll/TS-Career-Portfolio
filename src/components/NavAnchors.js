@@ -1,9 +1,14 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useLocation } from 'react-router-dom';
 
 
-export default function NavAnchors({ currentPage, handlePageChange }) {
+export default function NavAnchors() {
+
+const location = useLocation();
+const currentPage = location.pathname;
+
   const styles = {
 
     navLink: {
@@ -28,38 +33,37 @@ export default function NavAnchors({ currentPage, handlePageChange }) {
     },
   };
 
+ 
+
   return (
   
     <Navbar expand="lg" >
       <Container>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/">
           <span style={styles.name}>Tifni Shroll</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" onClick={() => handlePageChange('About')}
-              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-              style={currentPage === 'About' ? styles.activeNavLink : styles.navLink}
+            <Nav.Link href="/about" 
+              className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+              style={currentPage === '/' ? styles.activeNavLink : styles.navLink}
             >About
             </Nav.Link>
-            <Nav.Link href="#link"
-              onClick={() => handlePageChange('Portfolio')}
-              className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-              style={currentPage === 'Portfolio' ? styles.activeNavLink : styles.navLink}
+            <Nav.Link href="/portfolio"
+              className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
+              style={currentPage === '/portfolio' ? styles.activeNavLink : styles.navLink}
             >Portfolio
             </Nav.Link>
-            <Nav.Link href="#link"
-              onClick={() => handlePageChange('Resume')}
-              className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-              style={currentPage === 'Resume' ? styles.activeNavLink : styles.navLink}
+            <Nav.Link href="/resume"
+              className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}
+              style={currentPage === '/resume' ? styles.activeNavLink : styles.navLink}
 
             >Resume
             </Nav.Link>
-            <Nav.Link href="#link"
-              onClick={() => handlePageChange('Contact')}
-              className={currentPage === "Contact" ? 'nav-link active' : 'nav-link'}
-              style={currentPage === 'Contact' ? styles.activeNavLink : styles.navLink}
+            <Nav.Link href="/contact"
+              className={currentPage === "/contact" ? 'nav-link active' : 'nav-link'}
+              style={currentPage === '/contact' ? styles.activeNavLink : styles.navLink}
             >Contact
             </Nav.Link>
 
