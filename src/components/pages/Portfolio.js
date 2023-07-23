@@ -17,7 +17,9 @@ export default function Portfolio({ work1 }) {
         },
         title: {
             textAlign: "center",
-            marginBottom: 30
+            marginBottom: 30,
+            marginRight: 5,
+            marginLeft: 5
         },
 
         githubIcon: {
@@ -31,7 +33,15 @@ export default function Portfolio({ work1 }) {
             margin: 10,
             width: 140,
             height: 100
+        },
+        customContainer: {
+            marginLeft: "0",
+            marginRight: "0",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center"
         }
+
 
     };
 
@@ -39,17 +49,19 @@ export default function Portfolio({ work1 }) {
     // Will display 6 cards with project image, title, description, list of skills, 
     // link to deployed project - through the image and link to gitHub - through the icon
     return (
-        <section>
-        <div style={styles.title}>
-            <h1 >Coding Projects</h1>
-            <h4>Click an image below to explore my projects:</h4>
-            </div>
+        <>
+            {/* <Container style={styles.customContainer}> */}
+            <Container >
 
-            <Container>
+                <div style={styles.title}>
+                    <h1 >Coding Portfolio</h1>
+                    <h4 style={{ fontWeight: 300 }}>Click an image to explore a project:</h4>
+
+                </div>
                 <Row xs={1} md={2} lg={3} className="g-5">
                     {work1.map((project, idx) => (
                         <Col key={idx}>
-                            <Card border="secondary" style={{ width: '20rem' }}>
+                            <Card border="secondary" style={{ width: '18rem' }}>
 
                                 <Card.Link href={project.deployed}>
                                     <Card.Img variant="top" src={project.image} />
@@ -62,7 +74,7 @@ export default function Portfolio({ work1 }) {
                                     </Card.Text>
                                     <Card.Link href={project.gitHub}>
                                         <div style={styles.title}>
-                                        <Card.Img variant="top" src={gLogo} style={styles.githubIcon} />
+                                            <Card.Img variant="top" src={gLogo} style={styles.githubIcon} />
                                         </div>
                                     </Card.Link>
                                     <Card.Text >{project.technologies}</Card.Text>
@@ -72,7 +84,7 @@ export default function Portfolio({ work1 }) {
                     ))}
                 </Row>
             </Container>
-        </section>
+        </>
     );
 
 }

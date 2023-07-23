@@ -36,7 +36,7 @@ export default function Home() {
                 <div style={{ color: "white", fontSize: "2rem", fontWeight: "500", marginBottom: "30px" }}>
                     <Typewriter
                         options={{
-                            strings: ['Web Developer'],
+                            strings: ['Web Developer', "Life Long Learner"],
                             autoStart: true,
                             loop: true,
                         }}
@@ -44,7 +44,7 @@ export default function Home() {
                             typewriter
 
                                 // .typeString("Tifni Shroll")
-                                .pauseFor(1000)
+                                .pauseFor(900)
                                 // .deleteAll()
                                 // .typeString("Welcomes You")                        
                                 .start();
