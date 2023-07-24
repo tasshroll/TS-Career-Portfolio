@@ -12,12 +12,10 @@ const initialFormData = Object.freeze({
 
 // Form for user to contact me through email
 export default function Contact() {
-  
+
   const apiKey = process.env.REACT_APP_API_KEY;
-  console.log(apiKey);
 
   const styles = {
-
     header: {
       marginBottom: 30,
     },
@@ -43,11 +41,8 @@ export default function Contact() {
   const [message, setMessage] = useState('');
   const [formData, updateFormData] = useState(initialFormData);
 
-
   // When user enters data on form, change the state depending on the target
   const handleInputChange = (e) => {
-    console.log("inside handle Input Change");
-
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
@@ -60,13 +55,11 @@ export default function Contact() {
       setMessage(inputValue);
     }
 
-    updateFormData({...formData, [inputType]: inputValue});
+    updateFormData({ ...formData, [inputType]: inputValue });
     console.log(formData);
   };
 
   const handleFormSubmit = (e) => {
-    console.log("inside handle Form Submit");
-
     // Prevent the default page refresh behavior
     e.preventDefault();
 
@@ -85,18 +78,19 @@ export default function Contact() {
       return;
     }
     var templateParams = {
-      user_name: userName, 
-      user_email: userEmail, 
-      message: message};
+      user_name: userName,
+      user_email: userEmail,
+      message: message
+    };
 
-      console.log (templateParams);
+    console.log(templateParams);
 
     // invoke EmailJS to send an email to me
     emailjs.send('contact_service', 'contact_form', templateParams, apiKey)
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
 
     alert(`Thank you for your message ${userName}`);
@@ -106,33 +100,33 @@ export default function Contact() {
     setMessage('');
     setEmail('');
   };
-  
-   return (
-    <Container style={styles.shape }>
-          {/* <Container style={styles.shape }> */}
+
+  // render a form for User to enter their name, email, and message
+  return (
+    <Container style={styles.shape}>
 
       <Form >
         <div style={styles.text}>
-        <h1 style={styles.header}>Contact Me</h1>
+          <h1 style={styles.header}>Contact Me</h1>
 
-        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label >User Name</Form.Label>
-          <Form.Control onChange={handleInputChange} value={userName} name="userName" type="text" placeholder="user name" />
-        </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label >User Name</Form.Label>
+            <Form.Control onChange={handleInputChange} value={userName} name="userName" type="text" placeholder="user name" />
+          </Form.Group>
 
-        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Label >Email address</Form.Label>
-          <Form.Control onChange={handleInputChange} value={userEmail} name="userEmail" type="email" placeholder="name@example.com" />
-        </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label >Email address</Form.Label>
+            <Form.Control onChange={handleInputChange} value={userEmail} name="userEmail" type="email" placeholder="name@example.com" />
+          </Form.Group>
 
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Message</Form.Label>
-          <Form.Control onChange={handleInputChange} value={message} name="message" as="textarea" rows={3} />
-        </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Message</Form.Label>
+            <Form.Control onChange={handleInputChange} value={message} name="message" as="textarea" rows={3} />
+          </Form.Group>
 
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+          <button type="button" onClick={handleFormSubmit}>Submit</button>
         </div>
       </Form>
-      </Container>
-      );
+    </Container>
+  );
 }

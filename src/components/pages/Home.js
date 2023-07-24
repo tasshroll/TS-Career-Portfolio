@@ -10,7 +10,7 @@ export default function Home() {
             background: `url(${splashImg})`,
             height: "100vh",
             backgroundSize: "cover",
-            backgroundPosition: "center", 
+            backgroundPosition: "center",
         },
         text: {
             display: "flex",
@@ -25,7 +25,16 @@ export default function Home() {
             fontSize: "4rem",
             fontWeight: "500",
             marginTop: "100px",
-        }
+        },
+        button: {
+            backgroundColor: "white",
+            borderColor: "white",
+            color: "black",
+        },
+        buttonHover: {
+            backgroundColor: "grey",
+            color: "black",
+        },
     };
 
     return (
@@ -53,7 +62,15 @@ export default function Home() {
                         }}
                     />
                 </div>
-                <Button variant="outline-dark" href="/about" style={{ backgroundColor: "white" }} >Enter</Button>
+                <Button
+                    variant="outline-dark"
+                    href="/about" 
+                    // style={{ backgroundColor: "white", hover: "" }} >
+                    style={styles.button} 
+                    onMouseEnter={(e) => e.target.style = styles.buttonHover} 
+                    onMouseLeave={(e) => e.target.style = styles.button} >
+                    Enter
+                </Button>
             </div>
         </section>
     );
