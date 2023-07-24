@@ -10,6 +10,7 @@ export default function Home() {
             background: `url(${splashImg})`,
             height: "100vh",
             backgroundSize: "cover",
+            backgroundPosition: "center", 
         },
         text: {
             display: "flex",
@@ -44,7 +45,7 @@ export default function Home() {
                             typewriter
 
                                 // .typeString("Tifni Shroll")
-                                .pauseFor(900)
+                                // .pauseFor(500)
                                 // .deleteAll()
                                 // .typeString("Welcomes You")                        
                                 .start();
