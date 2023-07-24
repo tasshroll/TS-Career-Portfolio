@@ -56,7 +56,6 @@ export default function Contact() {
     }
 
     updateFormData({ ...formData, [inputType]: inputValue });
-    console.log(formData);
   };
 
   const handleFormSubmit = (e) => {
