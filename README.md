@@ -3,7 +3,8 @@ My portfolio showcases my talents and skills with Web development. It contains m
 
 ## Deployed Webpage
 
-https://tasshroll.github.io/TS-Career-Portfolio/
+https://ts-career-portfolio.vercel.app
+
 
 ## Git Hub Repository
 
