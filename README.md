@@ -15,6 +15,7 @@ My portolio contains links to current completed projects, as well as contact inf
 
 Coding projects include:
 
+* News App
 * Recipe Finder 
 * Book Worm
 * Weather App
@@ -32,4 +33,8 @@ Click, scroll, and re-size window to interact with the elements. Links within th
 ## License
 
 [![License](https://img.shields.io/badge/License-n/a-n/a.svg)](n/a)
+
+## Installation
+
+npm run start
 
