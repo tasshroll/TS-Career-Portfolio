@@ -5,17 +5,17 @@ import book from '../../Assets/images/bookworm.png'
 import blog from '../../Assets/images/blog_profile_page.png'
 import note from '../../Assets/images/Save-a-note.png'
 import password from '../../Assets/images/Password-screenshot.png'
-import Jolly_Journal from '../../Assets/images/Jolly_Journal.png'
+import Uplift_Beat from '../../Assets/images/Uplift_Beat.png'
 
 
 // Array holding objects wot project details
 export const work1 = [
     {
-        name: "Jolly Journal",
-        gitHub: "https://github.com/ethandanielsmall/jolly-journal",
-        deployed: "https://fast-brook-59696-a40083fa7f53.herokuapp.com/",
-        image: Jolly_Journal,
-        description: "Get the latest updates on current events with just a click. Stay informed and up-to-date and save articlea that interest you the most.",
+        name: "Uplift Beat",
+        gitHub: "https://github.com/tasshroll/Uplift-Beat",
+        deployed: "https://uplift-beat-1ed3f823ed28.herokuapp.com/",
+        image: Uplift_Beat,
+        description: "Get the latest uplifting articles  on current events with just a click. Stay informed and up-to-date. Save articles that interest you the most.",
         technologies: "MERN, MongoDB, Express, React, Node, Apollo Client, GraphQL, JWT, JavaScript, API, React"
     },
     {
