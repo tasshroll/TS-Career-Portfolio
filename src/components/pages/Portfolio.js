@@ -58,7 +58,7 @@ export default function Portfolio({ work1 }) {
                     <h4 style={{ fontWeight: 300 }}>Click an image to explore a project:</h4>
 
                 </div>
-                <Row xs={1} md={2} lg={3} className="g-5">
+                <Row xs={1} md={2} lg={3} className="g-5" justify-content-center >
                     {work1.map((project, idx) => (
                         <Col key={idx}>
                             <Card border="secondary" style={{ width: '18rem' }}>
@@ -67,7 +67,7 @@ export default function Portfolio({ work1 }) {
                                     <Card.Img variant="top" src={project.image} />
                                 </Card.Link>
 
-                                <Card.Body>
+                                <Card.Body justify-content-center>
                                     <Card.Title >{project.name}</Card.Title>
                                     <Card.Text>
                                         {project.description}

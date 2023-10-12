@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.ecaf5ea2.css",
-    "main.js": "/static/js/main.56151dcb.js",
+    "main.js": "/static/js/main.627be6c9.js",
     "static/js/787.56b9ac4d.chunk.js": "/static/js/787.56b9ac4d.chunk.js",
     "static/media/Koding-Kitch.png": "/static/media/Koding-Kitch.ba59636c954fa2214ca4.png",
+    "static/media/Uplift_Beat.png": "/static/media/Uplift_Beat.1ae9dfcec43b8a89167c.png",
     "static/media/sunset-us.jpg": "/static/media/sunset-us.2c3582d4a7b6fb6f0b97.jpg",
     "static/media/bookworm.png": "/static/media/bookworm.c366a1d09b97d086dfae.png",
     "static/media/weather-dashboard.png": "/static/media/weather-dashboard.0665613f7753f6509f9b.png",
@@ -13,11 +14,11 @@
     "static/media/Save-a-note.png": "/static/media/Save-a-note.b5e4c3a1c1dc5f4efb2a.png",
     "index.html": "/index.html",
     "main.ecaf5ea2.css.map": "/static/css/main.ecaf5ea2.css.map",
-    "main.56151dcb.js.map": "/static/js/main.56151dcb.js.map",
+    "main.627be6c9.js.map": "/static/js/main.627be6c9.js.map",
     "787.56b9ac4d.chunk.js.map": "/static/js/787.56b9ac4d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecaf5ea2.css",
-    "static/js/main.56151dcb.js"
+    "static/js/main.627be6c9.js"
   ]
 }
